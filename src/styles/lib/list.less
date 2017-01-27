@@ -1,0 +1,44 @@
+@import "../variable";
+
+.list__title {
+  font-size: 1.2em;
+}
+
+.list__more {
+  position: relative;
+  color: @accent-color;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -.5em;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    transition:
+      width .2s easeInOutQuad .2s,
+      border-bottom-color .2s easeInOutQuad .2s,
+      height .2s easeInOutQuad,
+      border-right-color .2s easeInOutQuad;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: transparent;
+  }
+
+  &:hover {
+    color: lighten(@accent-color, 20%);
+  }
+
+
+  &:hover:before {
+    transition:
+      width .2s easeInOutQuad,
+      border-bottom-color .2s easeInOutQuad,
+      height .2s easeInOutQuad .2s,
+      border-right-color .2s easeInOutQuad .2s;
+    width: calc(~'100% + 1em');
+    border-bottom-color: @accent-color;
+    height: 33.33333%;
+    border-right-color: @accent-color;
+  }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{config.lang}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{title}</title>
+  {css}
+  {cssLink}
+</head>
+<body>
+
+<div id="blog" class="blog">{contents}</div>
+
+<script src="{config.base}/scripts/bundle.js"></script>
+<script>
+  window.__DIZ__.render({props})
+</script>
+<script type="application/ld+json">
+{breadcrumb}
+</script>
+</body>
+</html>
