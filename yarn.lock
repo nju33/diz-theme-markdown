@@ -2276,7 +2276,7 @@ diz-plugin-collection-page-generator@^0.1.0:
     string-template "^1.0.0"
     validated "^0.9.0"
 
-diz-theme-minimalist@^0.1.1:
+diz-theme-minimalist@^0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/diz-theme-minimalist/-/diz-theme-minimalist-0.1.3.tgz#ae5615ece897bb16f146b87dd5bb2591cee3d59b"
   dependencies:
@@ -2296,9 +2296,9 @@ diz-theme@^0.0.1:
     babel-plugin-transform-runtime "^6.15.0"
     babel-preset-react "^6.16.0"
 
-diz@^0.1.0:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/diz/-/diz-0.1.6.tgz#ac9e75d5cedb374e0214f784dda7c6234b01cfcf"
+diz@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/diz/-/diz-0.2.0.tgz#e43ea0cc75e141804df4f2e5d93da127a442bb61"
   dependencies:
     babel-loader "^6.2.10"
     babel-plugin-transform-runtime "^6.15.0"
@@ -2306,7 +2306,7 @@ diz@^0.1.0:
     core-js "^2.4.1"
     css-loader "^0.26.1"
     diz-plugin-collection-page-generator "^0.1.0"
-    diz-theme-minimalist "^0.1.1"
+    diz-theme-minimalist "^0.1.3"
     event-stream "^3.3.4"
     glob "^7.0.5"
     gray-matter "^2.0.2"
@@ -4887,12 +4887,13 @@ magic-string@^0.14.0:
   dependencies:
     vlq "^0.2.1"
 
-magu@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/magu/-/magu-0.0.2.tgz#fe7bca97d2643a909fefe50098213926ff4fc4a4"
+magu@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/magu/-/magu-0.0.5.tgz#672d771250bf3db68f2befb3d724765cce617fad"
   dependencies:
     cheerio "^0.22.0"
     marked "^0.3.6"
+    p-is-promise "^1.1.0"
     pupa "^1.0.0"
 
 map-cache@^0.2.0:
@@ -5315,13 +5316,7 @@ on-finished@~2.3.0:
   dependencies:
     ee-first "1.1.1"
 
-once@^1.3.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
-  dependencies:
-    wrappy "1"
-
-once@~1.3.0, once@~1.3.3:
+once@^1.3.0, once@~1.3.0, once@~1.3.3:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/once/-/once-1.3.3.tgz#b2e261557ce4c314ec8304f3fa82663e4297ca20"
   dependencies:

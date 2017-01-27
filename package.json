@@ -1,25 +1,19 @@
 {
   "name": "diz-theme-markdown",
   "description": "A Diz theme",
-  "version": "0.1.1",
+  "version": "0.0.0",
   "author": "nju33 <nju33.ki@gmail.com>",
   "bugs": {
     "url": "https://github.com/nju33/diz-theme-markdown/issues",
     "email": "nju33.ki@gmail.com"
   },
-  "diz": {
-    "jsx": "./dist/Minimalist.jsx",
-    "html": "./dist/index.html",
-    "css": "./dist/index.css"
-  },
   "dependencies": {
     "diz-theme": "^0.0.1",
     "lodash.isnull": "^3.0.0",
     "lodash.omitby": "^4.6.0",
+    "pupa": "^1.0.0",
     "react": "^15.4.1",
-    "react-burger-menu": "^1.10.10",
-    "react-dom": "^15.4.1",
-    "string-template": "^1.0.0"
+    "react-dom": "^15.4.1"
   },
   "devDependencies": {
     "@nju33/gulp-multi-dest": "^0.0.2",
@@ -39,7 +33,7 @@
     "browser-sync": "^2.14.3",
     "css-mqpacker": "^5.0.1",
     "cssnano": "^3.7.5",
-    "diz": "^0.1.0",
+    "diz": "^0.2.0",
     "diz-plugin-atom-feed": "^0.0.2",
     "exit-hook": "^1.1.1",
     "gulp": "^3.9.1",
@@ -60,7 +54,7 @@
     "imagemin-pngquant": "^5.0.0",
     "lazypipe": "^1.0.1",
     "lodash": "^4.17.4",
-    "magu": "^0.0.2",
+    "magu": "^0.0.5",
     "mobx": "^2.6.2",
     "postcss-assets": "^4.1.0",
     "postcss-colorblind": "^1.0.0",
@@ -73,7 +67,6 @@
     "postcss-svg": "^1.0.6",
     "postcss-will-change": "^1.1.0",
     "postcss-yu-gothic": "^0.0.3",
-    "pupa": "^1.0.0",
     "tmp": "^0.0.31"
   },
   "homepage": "https://github.com/nju33/generator-diz#readme",
@@ -84,6 +77,7 @@
   ],
   "license": "MIT",
   "main": "markdown.js",
+  "style": "markdown.css",
   "repository": "nju33/diz-theme-markdown",
   "scripts": {
     "___postinstall": "(cd node_modules/lwip && npm i)",

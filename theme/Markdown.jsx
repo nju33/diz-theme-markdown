@@ -3,6 +3,7 @@ import omitBy from 'lodash.omitby';
 import isNull from 'lodash.isnull';
 // import Breadcrumb from './Breadcrumb.jsx';
 // import Sidebar from './Sidebar.jsx';
+import MiniBox from './MiniBox.jsx';
 import List from './List.jsx';
 import Post from './Post.jsx';
 import Footer from './Footer.jsx';
@@ -73,6 +74,7 @@ export default class Minimalist extends Component{
           <div className="contents">
             {/* <Breadcrumb breadcrumb={this.buildBreadcrumb(post)}/> */}
             <Content post={post}/>
+            <MiniBox post={post}/>
           </div>
           <Footer post={post}/>
         </main>

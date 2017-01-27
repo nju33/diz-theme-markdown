@@ -2,55 +2,115 @@
 
 @import (less) "modules/normalize.css";
 @import "modules/markdown";
-// @import "variable";
-// @import "font";
-// @import "lib/burger-menu";
-// @import "lib/sidebar";
-// @import "lib/breadcrumb";
-// @import "lib/list";
-// @import "lib/post";
-// @import "lib/pager";
-// @import "lib/footer";
+@import "variable";
+ @import "font";
 
-// body {
-//   .sans-serif(14px, 1.6);
-//   color: @font-color;
-//   background: #f3f3f3;
-// }
-//
-// a {
-//   text-decoration: none;
-//   color: inherit;
-//   transition: .2s easeInOutQuad;
-//
-//   &:hover {
-//     color: @accent-color;
-//   }
-// }
-//
-// img {
-//   max-width: 100%;
-//
-//   @media (max-width: 660px) {
-//     margin-left: -1em;
-//     max-width: calc(~'100% + 2em');
-//   }
-// }
-//
-// .main {
-//   max-width: 660px;
-//   margin: 0 auto;
-//
-//   @media (max-width: 660px) {
-//     padding: 0 1em;
-//   }
-// }
-//
-// .contents {
-//   padding: 1.85em 0;
-//   min-height: calc(~'100vh - 80px');
-// }
-//
-// .title {
-//   margin-bottom: .5em;
-// }
+body {
+  .sans-serif(13px, 1.6);
+  color: @font-color;
+  background: tint(spin(desaturate(@accent-color, 89), 10), 5);
+}
+
+a {
+  color: @accent-color;
+}
+
+a:hover {
+  color: tint(@accent-color, 20);
+}
+
+.main {
+  max-width: 37em;
+  margin: 0 auto;
+}
+
+.list__item,
+.post__box {
+  padding: 2em;
+  margin: 1em 0;
+  background: #f8f8f8;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.markdown {
+  font-size: 10px;
+}
+
+.markdown img {
+  max-width: 100%;
+}
+
+.markdown pre {
+  overflow: auto;
+  margin-left: 0;
+}
+
+.markdown code {
+  font-size: 11px;
+  line-height: 1.23;
+}
+
+.markdown code {
+  font-family: "Source Code Pro";
+  font-weight: 400;
+}
+
+.markdown table {
+  margin-bottom: 1em;
+}
+
+.markdown tr {
+  &:after {
+    content: "|";
+  }
+}
+
+.markdown th,
+.markdown td {
+  position: relative;
+  padding: 0 1em;
+
+  &:before {
+    content: "|";
+    position: absolute;
+    left: 0;
+  }
+}
+
+.minibox__box {
+  position: fixed;
+  right: .5em;
+  bottom: .5em;
+  font-size: 10px;
+  background: #f8f8f8;
+  max-height: 10em;
+  min-width: 15em;
+  overflow: auto;
+  opacity: .5;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @media (max-width: 37em) {
+    display: none;
+  }
+}
+
+.minibox__items {
+  list-style: none;
+  padding: 0;
+  margin: 1em;
+}
+
+.minibox__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__box {
+  text-align: center;
+}
